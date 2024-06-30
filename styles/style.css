@@ -13,8 +13,19 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 
 */
+html {
+  background-image: var(--main-gradient);
+}
 
 .page {
+  background-image: var(--gradient);
+  /* background-image: repeating-linear-gradient(#00cc14 2px, transparent 2px),
+    repeating-linear-gradient(90deg, #00cc14 2px, transparent 2px); */
+  /* background-size: cover; */
+  background-attachment: fixed;
+  /* background-repeat: no-repeat;
+  background-position: center bottom; */
+  font-family: var(--second-family);
   min-inline-size: 320px;
   min-block-size: 100dvb;
 }

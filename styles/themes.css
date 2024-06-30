@@ -4,3 +4,107 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+/* theme-dark */
+:root .theme_dark .page {
+  --font-variation-settings: 465;
+  --title-variation-settings: 785;
+  --accent-color: #00cc14;
+  --main-gradient: linear-gradient(#007f0c, #004306);
+  --gradient: repeating-linear-gradient(
+      #000000,
+      #000000 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      #000000,
+      #000000 2px,
+      transparent 2px,
+      transparent 4px
+    );
+}
+
+.theme_dark #floppy {
+  fill: #00cc14;
+}
+
+/* theme-light */
+:root .theme_light .page {
+  --font-variation-settings: 400;
+  --title-variation-settings: 700;
+  --accent-color: #000000;
+  --main-gradient: linear-gradient(#e7e7e7, #1a1a1a);
+  --gradient: repeating-linear-gradient(
+      #cdcdcd,
+      #cdcdcd 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      #cdcdcd,
+      #cdcdcd 2px,
+      transparent 2px,
+      transparent 4px
+    );
+}
+
+.theme_light #floppy {
+  fill: #000000;
+}
+
+/* prefers-color-scheme: dark */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --font-variation-settings: 465;
+    --title-variation-settings: 785;
+    --accent-color: #00cc14;
+    --main-gradient: linear-gradient(#007f0c, #004306);
+    --gradient: repeating-linear-gradient(
+        #000000,
+        #000000 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        #000000,
+        #000000 2px,
+        transparent 2px,
+        transparent 4px
+      );
+  }
+
+  #floppy {
+    fill: #00cc14;
+  }
+}
+
+/* prefers-color-scheme: light */
+@media (prefers-color-scheme: light) {
+  :root {
+    --font-variation-settings: 400;
+    --title-variation-settings: 700;
+    --accent-color: #000000;
+    --main-gradient: linear-gradient(#e7e7e7, #1a1a1a);
+    --gradient: repeating-linear-gradient(
+        #cdcdcd,
+        #cdcdcd 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        #cdcdcd,
+        #cdcdcd 2px,
+        transparent 2px,
+        transparent 4px
+      );
+  }
+
+  #floppy {
+    fill: #000000;
+  }
+}
