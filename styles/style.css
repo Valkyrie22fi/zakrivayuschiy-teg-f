@@ -199,7 +199,7 @@ img {
 }
 
 .card__image_2 {
-  filter: contrast(20%);
+  filter: contrast(175%) brightness(3%);
 }
 
 .card__image_3 {
@@ -215,7 +215,7 @@ img {
 }
 
 .card__image_6 {
-  filter: saturate(250%);
+  filter: saturate(250%) blur(15px);
 }
 
 .card__image_7 {
