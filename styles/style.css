@@ -210,6 +210,34 @@ img {
   padding: 29px 25px 24px;
 }
 
+.card__image_2 {
+  filter: contrast(20%);
+}
+
+.card__image_3 {
+  filter: blur(5px);
+}
+
+.card__image_4 {
+  filter: opacity(0.8);
+}
+
+.card__image_5 {
+  filter: grayscale(0.8);
+}
+
+.card__image_6 {
+  filter: saturate(250%);
+}
+
+.card__image_7 {
+  filter: hue-rotate(-90deg);
+}
+
+.card__image_8 {
+  filter: sepia(80%);
+}
+
 .card__text {
   font-family: var(--font-family);
   font-weight: 400;
