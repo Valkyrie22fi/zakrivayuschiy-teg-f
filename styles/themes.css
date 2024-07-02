@@ -5,8 +5,40 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 
+/* theme-light */
+:root.theme-light {
+  --font-variation-settings: 400;
+  --title-variation-settings: 700;
+  --accent-color: #000000;
+  --text-color: #000000;
+  --bg-color: #ffffff;
+  --color-backdrop: red;
+  --button-bg: #000000;
+  --border-color: #000000;
+  --like-text: #2e2e2e;
+  --heart-dark: #ff0000;
+  --heart-light: #ffffff;
+  --heart-color: #000000;
+  --dark-code: rgba(255, 255, 255, 0.5);
+  --main-code: rgba(255, 255, 255, 0.5);
+  --main-gradient: linear-gradient(#e7e7e7, #1a1a1a);
+  --gradient: repeating-linear-gradient(
+      #cdcdcd,
+      #cdcdcd 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      #cdcdcd,
+      #cdcdcd 2px,
+      transparent 2px,
+      transparent 4px
+    );
+}
+
 /* theme-dark */
-:root .theme_dark {
+:root.theme_dark {
   --font-variation-settings: 465;
   --title-variation-settings: 785;
   --accent-color: #00cc14;
@@ -33,38 +65,6 @@
       90deg,
       #000000,
       #000000 2px,
-      transparent 2px,
-      transparent 4px
-    );
-}
-
-/* theme-light */
-:root .theme-light {
-  --font-variation-settings: 400;
-  --title-variation-settings: 700;
-  --accent-color: #000000;
-  --text-color: #000000;
-  --bg-color: #ffffff;
-  --color-backdrop: red;
-  --button-bg: #000000;
-  --border-color: #000000;
-  --like-text: #2e2e2e;
-  --heart-dark: #ff0000;
-  --heart-light: #ffffff;
-  --heart-color: #000000;
-  --dark-code: rgba(255, 255, 255, 0.5);
-  --main-code: rgba(255, 255, 255, 0.5);
-  --main-gradient: linear-gradient(#e7e7e7, #1a1a1a);
-  --gradient: repeating-linear-gradient(
-      #cdcdcd,
-      #cdcdcd 2px,
-      transparent 2px,
-      transparent 4px
-    ),
-    repeating-linear-gradient(
-      90deg,
-      #cdcdcd,
-      #cdcdcd 2px,
       transparent 2px,
       transparent 4px
     );
