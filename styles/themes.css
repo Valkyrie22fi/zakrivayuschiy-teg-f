@@ -88,6 +88,11 @@
     --font-variation-settings: 400;
     --title-variation-settings: 700;
     --accent-color: #000000;
+    --like-text: #2e2e2e;
+    --bg-color: #ffffff;
+    --heart-dark: #000000;
+    --heart-light: #ffffff;
+    --heart-color: #ff0000;
     --main-gradient: linear-gradient(#e7e7e7, #1a1a1a);
     --gradient: repeating-linear-gradient(
         #cdcdcd,

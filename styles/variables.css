@@ -5,6 +5,16 @@
   --font-variation-settings: 465;
   --title-variation-settings: 785;
   --accent-color: #00cc14;
+  --text-color: #00cc14;
+  --bg-color: #000000;
+  --color-backdrop: red;
+  --button-bg: #000000;
+  --border-color: #00cc14;
+  --like-text: #002504;
+  --heart-dark: #000000;
+  --heart-light: #ffffff;
+  --heart-color: #00cc14;
+  --heart-active: #ff0000;
   --main-gradient: linear-gradient(#007f0c, #004306);
   --gradient: repeating-linear-gradient(
       #000000,
