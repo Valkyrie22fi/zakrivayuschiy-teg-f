@@ -45,15 +45,6 @@ img {
   font-weight: 400;
 }
 
-.button {
-  position: relative;
-  background-color: var(--bg-color);
-  border: 2px solid var(--border-color);
-  color: var(--accent-color);
-  font-size: 14px;
-  outline: none;
-}
-
 .button__text {
   align-items: center;
   display: flex;
@@ -187,9 +178,6 @@ img {
 .card__code {
   font-size: 14px;
   -webkit-text-fill-color: transparent;
-}
-
-.card__code {
   -webkit-text-stroke: 1px var(--main-code);
   @supports (text-stroke: 1px var(--main-code)) {
     text-shadow: 1px var(--main-code);
@@ -271,6 +259,12 @@ img {
   min-width: 130px;
   transition: box-shadow 0.3s ease;
   z-index: 0;
+  position: relative;
+  background-color: var(--bg-color);
+  border: 2px solid var(--border-color);
+  color: var(--accent-color);
+  font-size: 14px;
+  outline: none;
 }
 
 .button_focus:focus-visible,
