@@ -6,9 +6,7 @@
 */
 
 /* theme-dark */
-:root .theme_dark .page {
-  --font-family: "Inter-Variable", sans-serif;
-  --second-family: "PressStart2P", system-ui;
+:root .theme_dark {
   --font-variation-settings: 465;
   --title-variation-settings: 785;
   --accent-color: #00cc14;
@@ -40,12 +38,8 @@
     );
 }
 
-.theme_dark #floppy {
-  fill: #00cc14;
-}
-
 /* theme-light */
-:root .theme-light .page {
+:root .theme-light {
   --font-variation-settings: 400;
   --title-variation-settings: 700;
   --accent-color: #000000;
@@ -79,8 +73,6 @@
 /* prefers-color-scheme: dark */
 @media (prefers-color-scheme: dark) {
   :root {
-    --font-family: "Inter-Variable", sans-serif;
-    --second-family: "PressStart2P", system-ui;
     --font-variation-settings: 465;
     --title-variation-settings: 785;
     --accent-color: #00cc14;

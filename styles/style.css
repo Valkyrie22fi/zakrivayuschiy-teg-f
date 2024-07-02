@@ -61,27 +61,6 @@ img {
   justify-content: center;
 }
 
-/* animation */
-
-@keyframes arrow {
-  0% {
-    left: -14px;
-  }
-  100% {
-    left: -10px;
-  }
-}
-
-@keyframes move {
-  from {
-    translate: -100% 0%;
-  }
-
-  to {
-    translate: 0% 0%;
-  }
-}
-
 /* header */
 
 .header {
@@ -184,7 +163,6 @@ img {
 }
 
 .card__title {
-  background-color: var(--bg-color);
   border: 2px solid var(--border-color);
   border-bottom: none;
   font-family: var(--font-family);
@@ -220,6 +198,8 @@ img {
 }
 
 .card__content {
+  background-color: var(--bg-color);
+  border: 2px solid var(--border-color);
   border-top: none;
   padding: 29px 25px 24px;
 }
