@@ -419,8 +419,9 @@ img {
   opacity: 0;
 }
 
-.dialog[open]::backdrop {
-  background-color: salmon;
+dialog::backdrop {
+  background-color: rgb(0 0 0 / 0.3);
+  backdrop-filter: blur(7px);
 }
 
 .dialog__content {

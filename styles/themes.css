@@ -76,14 +76,6 @@
     );
 }
 
-.floppy rect {
-  fill: #000000;
-}
-
-.theme_light .floppy {
-  fill: #000000;
-}
-
 /* prefers-color-scheme: dark */
 @media (prefers-color-scheme: dark) {
   :root {
@@ -119,10 +111,6 @@
         transparent 4px
       );
   }
-
-  #floppy {
-    fill: #00cc14;
-  }
 }
 
 /* prefers-color-scheme: light */
@@ -156,9 +144,5 @@
         transparent 2px,
         transparent 4px
       );
-  }
-
-  .floppy rect {
-    fill: #000000;
   }
 }
