@@ -15,6 +15,8 @@
   --heart-light: #ffffff;
   --heart-color: #00cc14;
   --heart-active: #ff0000;
+  --dark-code: rgba(0, 204, 20, 0.5);
+  --main-code: rgba(255, 255, 255, 0.5);
   --main-gradient: linear-gradient(#007f0c, #004306);
   --gradient: repeating-linear-gradient(
       #000000,

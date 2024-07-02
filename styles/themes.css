@@ -7,9 +7,23 @@
 
 /* theme-dark */
 :root .theme_dark .page {
+  --font-family: "Inter-Variable", sans-serif;
+  --second-family: "PressStart2P", system-ui;
   --font-variation-settings: 465;
   --title-variation-settings: 785;
   --accent-color: #00cc14;
+  --text-color: #00cc14;
+  --bg-color: #000000;
+  --color-backdrop: red;
+  --button-bg: #000000;
+  --border-color: #00cc14;
+  --like-text: #002504;
+  --heart-dark: #000000;
+  --heart-light: #ffffff;
+  --heart-color: #00cc14;
+  --heart-active: #ff0000;
+  --dark-code: rgba(0, 204, 20, 0.5);
+  --main-code: rgba(255, 255, 255, 0.5);
   --main-gradient: linear-gradient(#007f0c, #004306);
   --gradient: repeating-linear-gradient(
       #000000,
@@ -31,10 +45,21 @@
 }
 
 /* theme-light */
-:root .theme_light .page {
+:root .theme-light .page {
   --font-variation-settings: 400;
   --title-variation-settings: 700;
   --accent-color: #000000;
+  --text-color: #000000;
+  --bg-color: #ffffff;
+  --color-backdrop: red;
+  --button-bg: #000000;
+  --border-color: #000000;
+  --like-text: #2e2e2e;
+  --heart-dark: #ff0000;
+  --heart-light: #ffffff;
+  --heart-color: #000000;
+  --dark-code: rgba(255, 255, 255, 0.5);
+  --main-code: rgba(255, 255, 255, 0.5);
   --main-gradient: linear-gradient(#e7e7e7, #1a1a1a);
   --gradient: repeating-linear-gradient(
       #cdcdcd,
@@ -51,16 +76,34 @@
     );
 }
 
-.theme_light #floppy {
+.floppy rect {
+  fill: #000000;
+}
+
+.theme_light .floppy {
   fill: #000000;
 }
 
 /* prefers-color-scheme: dark */
 @media (prefers-color-scheme: dark) {
   :root {
+    --font-family: "Inter-Variable", sans-serif;
+    --second-family: "PressStart2P", system-ui;
     --font-variation-settings: 465;
     --title-variation-settings: 785;
     --accent-color: #00cc14;
+    --text-color: #00cc14;
+    --bg-color: #000000;
+    --color-backdrop: red;
+    --button-bg: #000000;
+    --border-color: #00cc14;
+    --like-text: #002504;
+    --heart-dark: #000000;
+    --heart-light: #ffffff;
+    --heart-color: #00cc14;
+    --heart-active: #ff0000;
+    --dark-code: rgba(0, 204, 20, 0.5);
+    --main-code: rgba(255, 255, 255, 0.5);
     --main-gradient: linear-gradient(#007f0c, #004306);
     --gradient: repeating-linear-gradient(
         #000000,
@@ -88,11 +131,17 @@
     --font-variation-settings: 400;
     --title-variation-settings: 700;
     --accent-color: #000000;
-    --like-text: #2e2e2e;
+    --text-color: #000000;
     --bg-color: #ffffff;
-    --heart-dark: #000000;
+    --color-backdrop: red;
+    --button-bg: #000000;
+    --border-color: #000000;
+    --like-text: #2e2e2e;
+    --heart-dark: #ff0000;
     --heart-light: #ffffff;
-    --heart-color: #ff0000;
+    --heart-color: #000000;
+    --dark-code: rgba(255, 255, 255, 0.5);
+    --main-code: rgba(255, 255, 255, 0.5);
     --main-gradient: linear-gradient(#e7e7e7, #1a1a1a);
     --gradient: repeating-linear-gradient(
         #cdcdcd,
@@ -109,7 +158,7 @@
       );
   }
 
-  #floppy {
+  .floppy rect {
     fill: #000000;
   }
 }
