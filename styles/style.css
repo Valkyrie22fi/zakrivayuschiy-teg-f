@@ -191,10 +191,16 @@ img {
 
 .card__code {
   -webkit-text-stroke: 1px var(--main-code);
+  @supports (text-stroke: 1px var(--main-code)) {
+    text-shadow: 1px var(--main-code);
+  }
 }
 
 .card__1 .card__code {
   -webkit-text-stroke: 1px var(--dark-code);
+  @supports (text-stroke: 1px var(--dark-code)) {
+    text-shadow: 1px var(--main-code);
+  }
 }
 
 .card__content {
@@ -252,7 +258,6 @@ img {
   mix-blend-mode: difference;
   translate: -100% 0%;
   z-index: 1;
-  transition: all 0.5s ease-in-out;
 }
 
 .button:hover .button__text::before {
