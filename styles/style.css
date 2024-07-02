@@ -68,7 +68,7 @@ img {
 
 .header__title {
   display: inline-block;
-  font-weight: 400;
+  font-variation-settings: "wght" 400;
   font-size: 23px;
   margin-bottom: 23px;
   text-align: center;
