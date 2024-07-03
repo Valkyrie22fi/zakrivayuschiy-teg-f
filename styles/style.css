@@ -403,7 +403,7 @@ img {
   gap: 8px;
 }
 
-.dialog__save-icon {
+.button__text svg {
   flex: 0 0 21px;
 }
 
@@ -452,7 +452,7 @@ dialog::backdrop {
   text-transform: uppercase;
 }
 
-.dialog__icon {
+.dialog__title svg {
   flex: 0 0 39px;
 }
 
