@@ -568,21 +568,21 @@
       </footer>
     </div>
     <dialog id="dialog" class="dialog">
-      <div class="dialog__content">
-        <h1 class="dialog__title">
-          <svg viewBox="0 0 40 40">
-            <use href="./svg/floppy.svg#floppy">
-          </svg> 
-          Вставьте <br/> дискету, чтобы продолжить
-        </h1>
-        <button
-          class="button button__ok button_focus"
-          type="button"
-          onclick="window['dialog'].close()"
-        >
-          Ok
-        </button>
-      </div>
+      <form method="dialog">
+        <div class="dialog__content">
+          <h1 class="dialog__title">
+            <svg viewBox="0 0 40 40">
+              <use href="./svg/floppy.svg#floppy">
+            </svg> 
+            Вставьте <br/> дискету, чтобы продолжить
+          </h1>
+          <form method="dialog">
+            <button class="close-button">
+              <span class="visually-hidden">Ok</span>
+            </button>
+          </form>
+        </div>
+      </form>
     </dialog>
     
       
