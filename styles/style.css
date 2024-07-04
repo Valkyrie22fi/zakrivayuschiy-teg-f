@@ -61,7 +61,7 @@ img {
   display: flex;
   flex-direction: column;
   min-height: 364px;
-  margin-block-start: 100px;
+  margin-block-end: 100px;
   padding-bottom: 25px;
   padding-top: 136px;
 }
@@ -70,14 +70,14 @@ img {
   display: inline-block;
   font-variation-settings: "wght" 400;
   font-size: 23px;
-  margin-block-start: 23px;
+  margin-block-end: 23px;
   text-align: center;
   text-transform: uppercase;
 }
 
 .header__code {
   font-size: 65px;
-  margin-block-start: 20px;
+  margin-block-end: 20px;
 }
 
 /* nav */
@@ -87,7 +87,7 @@ img {
 }
 
 .theme-menu__item:not(:last-child) {
-  margin-block-start: 11px;
+  margin-block-end: 11px;
 }
 
 .theme-menu__button {
@@ -150,7 +150,7 @@ img {
 }
 
 .card:not(:last-child) {
-  margin-block-start: 52px;
+  margin-block-end: 52px;
 }
 
 .card__title {
@@ -177,17 +177,35 @@ img {
 
 .card__code {
   font-size: 14px;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px var(--main-code);
-  @supports (text-stroke: 1px var(--main-code)) {
-    text-shadow: 1px var(--main-code);
+  text-fill-color: transparent;
+  text-stroke: 2px var(--dark-code);
+}
+
+@supports (-webkit-text-fill-color: transparent) {
+  .card__code {
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@supports (
+  (text-stroke: 1px var(--dark-code)) or
+    (-webkit-text-stroke: 1px var(--dark-code))
+) {
+  .card__code {
+    -webkit-text-stroke: 2px var(--dark-code);
   }
 }
 
 .card__1 .card__code {
-  -webkit-text-stroke: 1px var(--dark-code);
-  @supports (text-stroke: 1px var(--dark-code)) {
-    text-shadow: 1px var(--main-code);
+  -webkit-text-stroke: 1px var(--main-code);
+}
+
+@supports (
+  (text-stroke: 1px var(--main-code)) or
+    (-webkit-text-stroke: 1px var(--main-code))
+) {
+  .card__1 .card__code {
+    -webkit-text-stroke: 2px var(--main-code);
   }
 }
 
@@ -198,9 +216,9 @@ img {
   padding: 29px 25px 24px;
 }
 
-.card__image_2 {
-  filter: contrast(175%) brightness(3%);
-}
+/* .card__image_2 {
+  filter: contrast(175%);
+} */
 
 .card__image_3 {
   filter: blur(5px);
@@ -235,7 +253,7 @@ img {
 }
 
 .card__text:not(:last-child) {
-  margin-block-start: 27px;
+  margin-block-end: 27px;
 }
 
 .card__footer {
@@ -387,7 +405,7 @@ img {
 .footer {
   display: flex;
   justify-content: center;
-  margin-block-end: 57px;
+  margin-block-start: 57px;
 }
 
 .button__save {
@@ -410,7 +428,7 @@ img {
 /* dialog */
 
 .button__ok {
-  margin-block-start: 20px;
+  margin-block-end: 20px;
   width: 100%;
 }
 

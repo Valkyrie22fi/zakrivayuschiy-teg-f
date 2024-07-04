@@ -592,18 +592,16 @@
         </button>
       </footer>
     </div>
-    <dialog id="dialog" class="dialog">
+    <dialog id="dialog" class="dialog" aria-labeledby="subscribe-header">
       <div class="dialog__content">
-        <h1 class="dialog__title">
+        <h1 class="dialog__title" id="subscribe-header">
           <svg viewBox="0 0 40 40">
             <use href="./svg/floppy.svg#floppy"></use>
           </svg>
           Вставьте <br />
           дискету, чтобы продолжить
         </h1>
-        <form method="dialog">
-          <button class="button button__ok button_focus">Ok</button>
-        </form>
+        <button onclick="this.closest('dialog').close()">Ok</button>
       </div>
     </dialog>
 
