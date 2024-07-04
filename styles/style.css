@@ -30,7 +30,7 @@ html {
 }
 
 .content {
-  margin-block-start: 105px;
+  margin-block-start: 100px;
   margin-block-end: 100px;
   width: min(696px, calc(70% + 100px));
 }
@@ -60,10 +60,9 @@ img {
   border: 2px solid var(--border-color);
   display: flex;
   flex-direction: column;
-  min-height: 364px;
   margin-block-end: 100px;
-  padding-bottom: 25px;
-  padding-top: 136px;
+  padding-block-end: 25px;
+  padding-block-start: 136px;
 }
 
 .header__title {
@@ -83,7 +82,7 @@ img {
 /* nav */
 
 .theme-menu__list {
-  padding-left: 15px;
+  padding-inline-start: 15px;
 }
 
 .theme-menu__item:not(:last-child) {
@@ -482,6 +481,10 @@ dialog::backdrop {
     max-width: 375px;
     width: 100%;
   }
+  .header {
+    padding-block-start: 120px;
+    padding-block-end: 24px;
+  }
   .header__code {
     font-size: 49px;
   }
@@ -490,5 +493,17 @@ dialog::backdrop {
   }
   .button__save .button__text {
     flex-direction: column;
+  }
+  .card__text:not(:last-child) {
+    margin-block-end: 25px;
+  }
+  .footer {
+    margin-block-start: 50px;
+  }
+  .button__save {
+    width: 310px;
+  }
+  .button__text svg {
+    flex: 0 0 27px;
   }
 }
