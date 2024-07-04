@@ -433,6 +433,7 @@ img {
 }
 
 .dialog {
+  border: none;
   display: grid;
   padding: 0;
   position: fixed;

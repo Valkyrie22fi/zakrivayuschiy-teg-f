@@ -581,14 +581,7 @@
           type="button"
           onclick="window['dialog-id'].showModal();"
           aria-controls="dialog-id"
-        >
-          Открыть окно
-        </button>
-        <!-- <button
           class="button button__save button_focus"
-          type="button"
-          onclick="window['dialog'].showModal()"
-          aria-controls="dialog"
         >
           <span class="button__text">
             <svg viewBox="0 0 38 38">
@@ -596,33 +589,24 @@
             </svg>
             Сохранить на память
           </span>
-        </button> -->
+        </button>
       </footer>
     </div>
-    <!-- <dialog id="dialog" class="dialog">
+    <dialog id="dialog-id" class="dialog">
       <div class="dialog__content">
-        <h1 class="dialog__title">
+        <h2 class="dialog__title">
           <svg viewBox="0 0 40 40">
             <use href="./svg/floppy.svg#floppy"></use>
           </svg>
           Вставьте <br />
           дискету, чтобы продолжить
-        </h1>
+        </h2>
         <form>
           <button type="submit" class="button button_focus button__ok">
             <span class="button__text">Ok</span>
           </button>
         </form>
       </div>
-    </dialog> -->
-
-    <dialog id="dialog-id">
-      <h2>Подпишитесь на нашу рассылку</h2>
-      <form>
-        <label for="email">Введите вашу почту</label>
-        <input type="email" id="email" placeholder="test@example.com" />
-        <button type="submit">Подписаться</button>
-      </form>
     </dialog>
     <script src="./scripts/like.js"></script>
   </body>
