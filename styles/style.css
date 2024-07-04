@@ -428,7 +428,7 @@ img {
 /* dialog */
 
 .button__ok {
-  margin-block-end: 20px;
+  margin-block-start: 20px;
   width: 100%;
 }
 

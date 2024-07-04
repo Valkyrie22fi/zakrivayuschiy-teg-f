@@ -601,7 +601,12 @@
           Вставьте <br />
           дискету, чтобы продолжить
         </h1>
-        <button onclick="this.closest('dialog').close()">Ok</button>
+        <button
+          class="button button_focus button__ok"
+          onclick="this.closest('dialog').close()"
+        >
+          <span class="button__text">Ok</span>
+        </button>
       </div>
     </dialog>
 
