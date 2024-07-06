@@ -433,9 +433,7 @@ img {
 }
 
 .dialog {
-  border: none;
   display: grid;
-  padding: 0;
   position: fixed;
   inset: 0;
   transition: opacity 0.3s ease-in-out;
