@@ -148,7 +148,12 @@ img {
   flex-direction: column;
 }
 
-.card:not(:last-child) {
+.card__list {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.card__item:not(:last-child) {
   margin-block-end: 52px;
 }
 
@@ -196,7 +201,7 @@ img {
   }
 }
 
-.card__1 .card__code {
+.card__prepare .card__code {
   -webkit-text-stroke: 1px var(--main-code);
 }
 
@@ -216,37 +221,37 @@ img {
   padding: 29px 25px 24px;
 }
 
-.card__image_2 {
+.card__image_blank-sheet {
   filter: contrast(175%);
 }
 
-.card__image_3 {
+.card__image_if {
   filter: blur(5px);
 }
 
-.card__image_4 {
+.card__image_perfect {
   filter: opacity(0.8);
 }
 
-.card__image_5 {
+.card__image_nearby {
   filter: grayscale(0.8);
 }
 
-.card__image_6 {
+.card__image_strategies {
   filter: saturate(250%) blur(15px);
 }
 
-.card__image_7 {
+.card__image_hands {
   filter: hue-rotate(-90deg);
 }
 
-.card__image_8 {
+.card__image_now {
   filter: sepia(80%);
 }
 
 .card__text {
   font-family: var(--font-family);
-  font-weight: 400;
+  font-weight: var(--font-weight);
   font-size: 18px;
   line-height: calc(21 / 18 * 100%);
   letter-spacing: 0.46px;
@@ -294,7 +299,7 @@ img {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: var(--accent-color);
+  background-color: var(--card-button-color);
   mix-blend-mode: difference;
   translate: -100% 0%;
   z-index: 1;
@@ -371,8 +376,7 @@ img {
 
 .like-icon.is-liked .core,
 .like-icon.is-liked .contour,
-.like-icon.is-liked .main-body,
-.like-icon.is-liked .sparks {
+.like-icon.is-liked .main-body {
   fill: var(--heart-active);
 }
 
@@ -394,12 +398,7 @@ img {
 }
 
 .like-icon.is-liked .sparks {
-  opacity: 1;
-}
-
-.like-icon .sparks {
-  opacity: 0;
-  transition: opacity 0.1s ease-in;
+  animation: sparks 0.3s normal ease-in;
 }
 
 .footer {
@@ -439,6 +438,10 @@ img {
   position: fixed;
   inset: 0;
   transition: opacity 0.3s ease-in-out;
+  background-color: var(--bg-color);
+  border: 2px solid var(--accent-color);
+  padding: 30px;
+  max-width: 357px;
   z-index: 101;
 }
 
@@ -453,17 +456,13 @@ dialog::backdrop {
 }
 
 .dialog__content {
-  background-color: var(--bg-color);
-  border: 2px solid var(--accent-color);
-  padding: 30px;
-  width: 357px;
-}
-
-.dialog__title {
   align-items: center;
   color: var(--accent-color);
   display: flex;
   gap: 20px;
+}
+
+.dialog__title {
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 14px;
@@ -471,7 +470,7 @@ dialog::backdrop {
   text-transform: uppercase;
 }
 
-.dialog__title svg {
+.dialog__icon {
   flex: 0 0 39px;
 }
 

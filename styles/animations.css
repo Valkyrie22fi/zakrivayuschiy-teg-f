@@ -31,3 +31,15 @@
     translate: 0% 0%;
   }
 }
+
+@keyframes sparks {
+  0% {
+    opacity: 1;
+    fill: var(--heart-active);
+  }
+
+  100% {
+    fill: transparent;
+    opacity: 0;
+  }
+}
