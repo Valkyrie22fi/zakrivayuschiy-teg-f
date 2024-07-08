@@ -161,7 +161,7 @@ img {
   border: 2px solid var(--border-color);
   border-bottom: none;
   font-family: var(--font-family);
-  font-weight: 700;
+  font-weight: var(--title-variation-settings);
   font-size: 18px;
   line-height: calc(22 / 18 * 100%);
   padding: 4px 24px 4px 10px;
